@@ -77,7 +77,8 @@ A Chrome extension that enhances LinkedIn profile pages by displaying rich compa
 
 ## 🧪 Example Screenshot
 
-![Widget Screenshot](icons/linkedin-widget.png)
+![LinkedIn Widget](icons/linkedin-widget.png)
+
 
 ## 📬 Feedback
 
