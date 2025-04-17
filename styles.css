@@ -1,0 +1,147 @@
+.linkedin-insights-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .linkedin-insights-widget.hidden {
+    transform: translateX(calc(100% + 20px));
+  }
+  
+  .widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a66c2;
+    color: white;
+    padding: 12px 15px;
+  }
+  
+  .widget-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .widget-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .widget-content {
+    padding: 15px;
+  }
+  
+  .company-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .match-score-container {
+    margin-bottom: 12px;
+  }
+  
+  .match-score-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .match-score-value {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #e1e9ee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #0a66c2;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .account-status-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .account-status-label {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .status-tag {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .status-tag.target {
+    background-color: rgba(22, 160, 74, 0.2);
+    color: #16a04a;
+  }
+  
+  .status-tag.not-target {
+    background-color: rgba(223, 50, 50, 0.2);
+    color: #df3232;
+  }
+  
+  .toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0a66c2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    border: none;
+    font-size: 18px;
+  }
+  
+  .toggle-button.hidden {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .linkedin-insights-widget {
+      width: 250px;
+    }
+  }
